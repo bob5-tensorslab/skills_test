@@ -1,6 +1,6 @@
 ---
 name: tensorslab-image
-description: Generate images using TensorsLab's AI image generation models. Supports text-to-image and image-to-image generation with automatic prompt enhancement, progress tracking, and local file saving. Use for generating images from text descriptions, transforming existing images, creating artistic renderings, batch generation, and various resolutions. Requires TENSORAI_API_KEY environment variable.
+description: Generate images using TensorsLab's AI image generation models. Supports text-to-image and image-to-image generation with automatic prompt enhancement, progress tracking, and local file saving. Use for generating images from text descriptions, transforming existing images, creating artistic renderings, batch generation, and various resolutions. Requires TENSORSLAB_API_KEY environment variable.
 ---
 
 # TensorsLab Image Generation
@@ -15,7 +15,7 @@ Before any image generation, verify the API key is configured:
 
 ```bash
 # Check if API key is set
-echo $TENSORAI_API_KEY
+echo $TENSORSLAB_API_KEY
 ```
 
 If not set, display this friendly message:
@@ -25,8 +25,8 @@ If not set, display this friendly message:
 1. 访问 https://tensorai.tensorslab.com/ 登录并订阅。
 2. 在控制台中获取您的专属 API Key。
 3. 将其保存为环境变量：
-   - Windows (PowerShell): $env:TENSORAI_API_KEY="您的Key"
-   - Mac/Linux: export TENSORAI_API_KEY="您的Key"
+   - Windows (PowerShell): $env:TENSORSLAB_API_KEY="您的Key"
+   - Mac/Linux: export TENSORSLAB_API_KEY="您的Key"
 ```
 
 ## Models

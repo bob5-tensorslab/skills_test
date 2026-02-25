@@ -11,7 +11,7 @@ https://test.tensorai.tensorslab.com
 All requests require Bearer token authentication:
 
 ```
-Authorization: Bearer <TENSORAI_API_KEY>
+Authorization: Bearer <TENSORSLAB_API_KEY>
 ```
 
 ## Response Format

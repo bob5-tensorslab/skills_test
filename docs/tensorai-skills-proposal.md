@@ -6,15 +6,15 @@
 ## 2. API Key 获取与环境配置体验
 **用户痛点**：用户并不知道如何配置认证信息。
 **Skill 设计**：
-1. **自动拦截与提示**：当用户首次呼叫该 Skill 时，脚本会先检查系统环境变量 `TENSORAI_API_KEY`。
+1. **自动拦截与提示**：当用户首次呼叫该 Skill 时，脚本会先检查系统环境变量 `TENSORSLAB_API_KEY`。
 2. **友好的引导文案**：如果未设置，温和地输出：
    ```text
    您好！要生成高质量的内容，您需要先进行简单的配置：
    1. 访问 https://tensorslab.tensorslab.com/ 登录并订阅。
    2. 在控制台中获取您的专属 API Key。
    3. 将其保存为环境变量：
-      - Windows (PowerShell): $env:TENSORAI_API_KEY="您的Key"
-      - Mac/Linux: export TENSORAI_API_KEY="您的Key"
+      - Windows (PowerShell): $env:TENSORSLAB_API_KEY="您的Key"
+      - Mac/Linux: export TENSORSLAB_API_KEY="您的Key"
    ```
 
 ## 3. 图片生成 Skill (tensorslab-image) 的基础能力场景

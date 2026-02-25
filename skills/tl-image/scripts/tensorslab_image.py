@@ -53,15 +53,15 @@ RESPONSE_CODES = {
 
 def get_api_key() -> str:
     """Get API key from environment variable."""
-    api_key = os.environ.get("TENSORAI_API_KEY")
+    api_key = os.environ.get("TENSORSLAB_API_KEY")
     if not api_key:
-        logger.error("Error: TENSORAI_API_KEY environment variable is not set.")
+        logger.error("Error: TENSORSLAB_API_KEY environment variable is not set.")
         logger.info("\nTo get your API key:")
         logger.info("1. Visit https://tensorslab.tensorslab.com/ and subscribe")
         logger.info("2. Get your API Key from the console")
         logger.info("3. Set the environment variable:")
-        logger.info("   - Windows (PowerShell): $env:TENSORAI_API_KEY=\"your-key-here\"")
-        logger.info("   - Mac/Linux: export TENSORAI_API_KEY=\"your-key-here\"")
+        logger.info("   - Windows (PowerShell): $env:TENSORSLAB_API_KEY=\"your-key-here\"")
+        logger.info("   - Mac/Linux: export TENSORSLAB_API_KEY=\"your-key-here\"")
         sys.exit(1)
     return api_key
 
@@ -335,7 +335,7 @@ Examples:
     parser.add_argument("--source", "-s", action="append", dest="sources",
                        help="Source image path for image-to-image (can be used multiple times)")
     parser.add_argument("--image-url", help="Source image URL for image-to-image")
-    parser.add_argument("--api-key", help="TensorsLab API key (uses TENSORAI_API_KEY env var if not set)")
+    parser.add_argument("--api-key", help="TensorsLab API key (uses TENSORSLAB_API_KEY env var if not set)")
     parser.add_argument("--poll-interval", type=int, default=5,
                        help="Status check interval in seconds (default: 5)")
     parser.add_argument("--timeout", type=int, default=300,

@@ -61,10 +61,10 @@ You can get your API Key at [TensorsLab Console](https://tensorai.tensorslab.com
 
 ```bash
 # Windows (PowerShell)
-$env:TENSORAI_API_KEY="your-api-key"
+$env:TENSORSLAB_API_KEY="your-api-key"
 
 # Mac/Linux
-export TENSORAI_API_KEY="your-api-key"
+export TENSORSLAB_API_KEY="your-api-key"
 ```
 
 ### Using skills in your coding agent

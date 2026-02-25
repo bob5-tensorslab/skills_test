@@ -1,6 +1,6 @@
 ---
 name: tensorslab-video
-description: Generate videos using TensorsLab's AI video generation models. Supports text-to-video and image-to-video generation with automatic prompt enhancement, progress tracking, and local file saving. Use for generating videos from text descriptions, animating static images, creating cinematic content, and various aspect ratios. Requires TENSORAI_API_KEY environment variable. Video generation takes several minutes.
+description: Generate videos using TensorsLab's AI video generation models. Supports text-to-video and image-to-video generation with automatic prompt enhancement, progress tracking, and local file saving. Use for generating videos from text descriptions, animating static images, creating cinematic content, and various aspect ratios. Requires TENSORSLAB_API_KEY environment variable. Video generation takes several minutes.
 ---
 
 # TensorsLab Video Generation
@@ -15,7 +15,7 @@ Before any video generation, verify the API key is configured:
 
 ```bash
 # Check if API key is set
-echo $TENSORAI_API_KEY
+echo $TENSORSLAB_API_KEY
 ```
 
 If not set, display this friendly message:
@@ -25,8 +25,8 @@ If not set, display this friendly message:
 1. 访问 https://tensorslab.tensorslab.com/ 登录并订阅。
 2. 在控制台中获取您的专属 API Key。
 3. 将其保存为环境变量：
-   - Windows (PowerShell): $env:TENSORAI_API_KEY="您的Key"
-   - Mac/Linux: export TENSORAI_API_KEY="您的Key"
+   - Windows (PowerShell): $env:TENSORSLAB_API_KEY="您的Key"
+   - Mac/Linux: export TENSORSLAB_API_KEY="您的Key"
 ```
 
 ## Models
